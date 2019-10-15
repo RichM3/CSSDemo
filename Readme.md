@@ -29,7 +29,9 @@ CSS Demos will provide the user with examples of:
 
 ### Architecture and Technologies
 
-- Vanilla JavaScript for overall structure and game logic,
+- Vanilla JavaScript for overall structure
+- DOM Manipulation
+- Canvas
 - Webpack to bundle and serve up the various scripts
 
 
