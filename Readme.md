@@ -24,6 +24,8 @@ CSS Demos will provide the user with examples of:
     The app will consist of a single page with the above demos listed with anchor tags at the top to each corresponding section.  The page top will additionally include links to my GitHub, LinkedIn and personel profile pages.
     The rest of the page will provide the CSS Demo listed with backgrounds alternating to differentiate each section.  This visual variation is a design decision to provide a visable differnece to the user letting them know we have reached a new section.
 
+![CSSDEMO](./images/CssDemoWireframes.png)
+
 
 ### Architecture and Technologies
 
