@@ -1,0 +1,173 @@
+.straightflushcontainer {
+    display: flex;
+}
+
+.flipcontainer {
+    position: relative;
+    width: 250px;
+    height: 360px;
+}
+
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+.thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    background-image: url("../../images/CardBack.png");
+    /* background-image: url("./images/CardBack.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    transform: rotateY(180deg);
+    /* background-image: url("./images/Ace.png"); */
+    /* background-image: url("../../images/Ace.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+}
+
+/* set the image in the div as img src instead of as background */
+.theback img {
+    max-width:100%;
+    max-height:100%;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+    /* border: 1px solid black; */
+}
+
+
+
+/* -------------------------------------------- deck code goes here -------------------------------------------- */
+
+
+.deck-full-container {
+    display: flex;
+    perspective: 9000px;
+    margin-left: 200px;
+}
+
+.deck-container {
+    position: relative;
+    width: 250px;
+    height: 360px;
+
+    cursor: pointer;
+    transform: rotateY(45deg);
+    transition: transform 0.5s ease;
+
+}
+
+.deck-container:not(:first-child) {
+    margin-left: -160px;
+}
+
+.deck-container:hover {
+    /* transform: rotateY(180deg); */
+    transform: rotateY(45deg) translateY(-70px);
+}
+
+
+.the-deck-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+/* .the-deck-card:hover {
+    transform: rotateY(180deg);
+} */
+
+/* .the-deck-card:active {
+    transform: rotateY(180deg);
+} */
+
+/* .the-deck-card:a {
+    transform: rotateY(180deg);
+} */
+
+.the-deck-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    background-image: url("../../images/CardBack.png");
+    /* background-image: url("./images/CardBack.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    transform: rotateY(180deg);
+    /* background-image: url("./images/Ace.png"); */
+    /* background-image: url("../../images/Ace.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+}
+
+.the-deck-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    transform: rotateY(180deg);
+    /* background-image: url("./images/Ace.png"); */
+    /* background-image: url("../../images/Ace.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+}
+
+/* set the image in the div as img src instead of as background */
+.the-deck-back img {
+    max-width:100%;
+    max-height:100%;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+    /* border: 1px solid black; */
+}
+
+

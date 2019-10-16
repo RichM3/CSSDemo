@@ -5,24 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/flipcard.css">
+    <link rel="stylesheet" href="./src/styles/canvas.css">
     <title>Document</title>
-    <style>
 
-        .canvasDiv {
+    <!-- <script>
+        function myFunction() {
+            alert("called");
+            var element = document.getElementById("ten");
+            debugger
+            element.classList.toggle("the-deck-card-back");
+            debugger
+        }
+    </script> -->
+
+    <style>
+.mystyle {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+}
+
+        /* The canvas styles */
+        /* .canvasDiv {
             width: 500px;
             height: 500px;
-            /* border: 3px solid #73AD21; */
-            /* background: blue; */
         }
 
         .myCanvas {
             border: 3px solid #ccc;
-            /* margin: 30px; */
             background: red;
-            /* width: 100%; */
-        }
+        } */
 
-        .maincontainer {
+
+        /* The card trick styles */
+        /* .flipcontainer {
             position: relative;
             width: 250px;
             height: 360px;
@@ -65,20 +82,55 @@
             background-repeat: no-repeat;
             border-radius: 20px;
             border: 1px solid black;
-        }
+        } */
 
     </style>
 </head>
 <body>
     <!-- <div id="app"></div> -->
 
-    <div class="maincontainer">
-        <div class="thecard">
-            <div class="thefront"></div>
-            <div class="theback"></div>
+    <div class="straightflushcontainer">
+        <div class="flipcontainer">
+            <div class="thecard">
+                <div class="thefront"></div>
+                <div class="theback">
+                    <img src="../../images/Ace.png">
+                </div>
+            </div>
+        </div>
+        <div class="flipcontainer">
+            <div class="thecard">
+                <div class="thefront"></div>
+                <div class="theback">
+                    <img src="../../images/king.png">
+                </div>
+            </div>
+        </div>
+        <div class="flipcontainer">
+            <div class="thecard">
+                <div class="thefront"></div>
+                <div class="theback">
+                    <img src="../../images/queen.png">
+                </div>
+            </div>
+        </div>
+        <div class="flipcontainer">
+            <div class="thecard">
+                <div class="thefront"></div>
+                <div class="theback">
+                    <img src="../../images/jack.png">
+                </div>
+            </div>
+        </div>
+        <div class="flipcontainer">
+            <div class="thecard">
+                <div class="thefront"></div>
+                <div class="theback">
+                    <img src="../../images/ten.png">
+                </div>
+            </div>
         </div>
     </div>
-
 
     <!-- <div>  Pisa notes for the second card - If used
         The Leaning Tower of Pisa (Italian: Torre pendente di Pisa) or simply the Tower of Pisa (Torre di Pisa [ˈtorre di
@@ -87,17 +139,117 @@
         Cathedral and is the third-oldest structure in the city's Cathedral Square (Piazza del Duomo), after the cathedral and
         the Pisa Baptistry.
     </div> -->
+    
+
+
+
+    <!-- <div class="deck-full-container">
+        <div class="deck-container">
+            <div class="the-deck-card">
+                <div class="thedeckfront"></div>
+                <div class="thedeckback">
+                    <img src="../../images/Ace.png">
+                </div>
+            </div>
+        </div>
+        <div class="deck-container">
+            <div class="the-deck-card">
+                <div class="thedeckfront"></div>
+                <div class="thedeckback">
+                    <img src="../../images/king.png">
+                </div>
+            </div>
+        </div>
+        <div class="deck-container">
+            <div class="the-deck-card">
+                <div class="thedeckfront"></div>
+                <div class="thedeckback">
+                    <img src="../../images/queen.png">
+                </div>
+            </div>
+        </div>
+        <div class="deck-container">
+            <div class="the-deck-card">
+                <div class="thedeckfront"></div>
+                <div class="thedeckback">
+                    <img src="../../images/jack.png">
+                </div>
+            </div>
+        </div>
+        <div class="deck-container">
+            <div class="the-deck-card" id="ten" onclick="myFunction()">
+                <div class="thedeckfront"  onclick="myFunction()"></div>
+                <div class="thedeckback">
+                    <img src="../../images/ten.png">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+
+    <!-- <canvas class="myCanvas" id="myCanvas" width="200" height="200"> -->
 
     <div class="canvasDiv" id="canvasDiv">
-    <!-- <canvas class="myCanvas" id="myCanvas" width="200" height="200"> -->
         <canvas class="myCanvas" id="myCanvas">
             <p>Sorry your browswer does not support canvas.</p>
         </canvas>
     </div>
 
-    <!-- <script src="./src/index.js"></script> -->
+    <script src="./src/index.js"></script>
     <!-- <script src="./src/canvasClick.js"></script> -->
     <script src="./src/removeBoxes.js"></script>
+
+
+
+    <div class="deck-full-container">
+        <div class="deck-container">
+            <div class="the-deck-card">
+                <div class="the-deck-front"></div>
+                <div class="the-deck-back">
+                    <img src="../../images/Ace.png">
+                </div>
+            </div>
+        </div>
+        <div class="deck-container">
+            <div class="the-deck-card">
+                <div class="the-deck-front"></div>
+                <div class="the-deck-back">
+                    <img src="../../images/king.png">
+                </div>
+            </div>
+        </div>
+        <div class="deck-container">
+            <div class="the-deck-card">
+                <div class="the-deck-front"></div>
+                <div class="the-deck-back">
+                    <img src="../../images/queen.png">
+                </div>
+            </div>
+        </div>
+        <div class="deck-container">
+            <div class="the-deck-card">
+                <div class="the-deck-front"></div>
+                <div class="the-deck-back">
+                    <img src="../../images/jack.png">
+                </div>
+            </div>
+        </div>
+        <div class="deck-container">
+            <div class="the-deck-card">
+                <div class="the-deck-front"></div>
+                <div class="the-deck-back">
+                    <img src="../../images/ten.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 </html>

@@ -1,14 +1,19 @@
+/* There is a default small margin if not explicitly set to zero
+The overflow hidden keeps the scrollbars from appearing by default */
+
+
 /* Code for the 2D examples */
 /* body {
     margin: 0;
     overflow: hidden;
 } */
 
-
 /* Code for the 3D examples - WebGL - Three.js library */
-html,body {
+/* html,body {
     margin: 0;
-}
-body {
+} */
+/* body {
     overflow: hidden;
-}
+} */
+
+
