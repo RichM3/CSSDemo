@@ -1,7 +1,7 @@
 {
   "name": "cssdemo",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Background and Overview",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -30,9 +30,18 @@
     "sass": "^1.23.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
-    "webpack": "^4.41.1",
+    "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.2",
     "webpack-merge": "^4.2.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichM3/CSSDemo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RichM3/CSSDemo/issues"
+  },
+  "homepage": "https://github.com/RichM3/CSSDemo#readme"
 }

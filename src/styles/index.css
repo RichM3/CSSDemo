@@ -1,0 +1,14 @@
+/* Code for the 2D examples */
+/* body {
+    margin: 0;
+    overflow: hidden;
+} */
+
+
+/* Code for the 3D examples - WebGL - Three.js library */
+html,body {
+    margin: 0;
+}
+body {
+    overflow: hidden;
+}
