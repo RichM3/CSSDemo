@@ -8,6 +8,20 @@
     <title>Document</title>
     <style>
 
+        .canvasDiv {
+            width: 500px;
+            height: 500px;
+            /* border: 3px solid #73AD21; */
+            /* background: blue; */
+        }
+
+        .myCanvas {
+            border: 3px solid #ccc;
+            /* margin: 30px; */
+            background: red;
+            /* width: 100%; */
+        }
+
         .maincontainer {
             position: relative;
             width: 250px;
@@ -56,7 +70,7 @@
     </style>
 </head>
 <body>
-    <div id="app"></div>
+    <!-- <div id="app"></div> -->
 
     <div class="maincontainer">
         <div class="thecard">
@@ -74,12 +88,16 @@
         the Pisa Baptistry.
     </div> -->
 
+    <div class="canvasDiv" id="canvasDiv">
+    <!-- <canvas class="myCanvas" id="myCanvas" width="200" height="200"> -->
+        <canvas class="myCanvas" id="myCanvas">
+            <p>Sorry your browswer does not support canvas.</p>
+        </canvas>
+    </div>
 
-    <canvas class="myCanvas">
-        <p>Add suitable fallback here.</p>
-    </canvas>
-
-    <script src="./src/index.js"></script>
+    <!-- <script src="./src/index.js"></script> -->
+    <!-- <script src="./src/canvasClick.js"></script> -->
+    <script src="./src/removeBoxes.js"></script>
 
 </body>
 </html>
