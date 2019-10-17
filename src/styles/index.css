@@ -18,21 +18,62 @@ The overflow hidden keeps the scrollbars from appearing by default */
 
 
 
+.cog-header {
+    /* z-index: 1; */
+    width: 600px;
+    height: 300px;
+    display: inline-block;
+
+    /* text-align: center; */
+
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+    animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+    animation: 10s linear infinite changeColor;
+}
+
+.cog-header h2 {
+    margin: 1em auto;
+    text-align: center;
+    margin-top: 20%;
+}
+
 .cog-container {
     /* background: transparent; */
-    /* z-index: -1; */
+    z-index: -1;
+    position: relative;
     width: 300px;
     height: 300px;
+
+    animation: 1s linear infinite rotateCog;
 }
 
 .cog-container img {
     /* background: transparent; */
     /* z-index: -1; */
+    /* position: relative; */
     width: 300px;
     height: 300px;
 }
 
+.cog-container-fast {
+    /* background: transparent; */
+    z-index: -1;
+    position: relative;
+    width: 300px;
+    height: 300px;
 
+    animation: 1s linear infinite rotateCog;
+}
+
+.cog-container-fast img {
+    /* background: transparent; */
+    /* z-index: -1; */
+    /* position: relative; */
+    width: 300px;
+    height: 300px;
+}
 
 
 /* .perspective { perspective: 300px; } */
@@ -90,3 +131,17 @@ The overflow hidden keeps the scrollbars from appearing by default */
     100% { transform: rotateX(360deg); }
 } */
 
+
+
+
+@keyframes rotateCog {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes changeColor {
+    0% { background: blue;}
+    50% { background: red;}
+    70% { background: green;}
+    100% { background: blue;}
+}
