@@ -9,85 +9,77 @@
     <link rel="stylesheet" href="./src/styles/canvas.css">
     <title>Document</title>
 
+    <script>
+        var looper;
+        var degrees = 0;
+
+        function rotateAnimation(el, speed) {
+            var elem = document.getElementById(el);
+            elem.style.transform = "rotate(" + degrees + "deg)";
+
+            looper = setTimeout('rotateAnimation(\'' + el + '\',' + speed + ')', speed);
+            // looper = setInterval('rotateAnimation(\'' + el + '\',' + speed + ')', speed);
+
+            degrees++;
+
+            if (degrees > 359) {
+                degrees = 1;
+            }
+
+            document.getElementById("status").innerHTML = "rotate(" + degrees + "deg)";
+        }
+    </script>
+
     <!-- <script>
-        function myFunction() {
-            alert("called");
-            var element = document.getElementById("ten");
-            debugger
-            element.classList.toggle("the-deck-card-back");
-            debugger
+        function rotateImage() {
+            var img = document.getElementById('myimage');
+            img.style.transform = 'rotate(180deg)';
         }
     </script> -->
 
-    <style>
-.mystyle {
-  width: 100%;
-  padding: 25px;
-  background-color: coral;
-}
-
-        /* The canvas styles */
-        /* .canvasDiv {
-            width: 500px;
-            height: 500px;
-        }
-
-        .myCanvas {
-            border: 3px solid #ccc;
-            background: red;
-        } */
-
-
-        /* The card trick styles */
-        /* .flipcontainer {
-            position: relative;
-            width: 250px;
-            height: 360px;
-        }
-
-        .thecard {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            transform-style: preserve-3d;
-            transition: all 0.7s ease;
-        }
-
-        .thecard:hover {
-            transform: rotateY(180deg);
-        }
-
-        .thefront {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            color: #333;
-            background-image: url("./images/CardBack.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-radius: 20px;
-            border: 1px solid black;
-        }
-
-        .theback {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            color: #333;
-            transform: rotateY(180deg);
-            background-image: url("./images/Ace.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-radius: 20px;
-            border: 1px solid black;
-        } */
-
-    </style>
 </head>
 <body>
+
+    <!-- <div class="cog-container">
+    <p>Click on the image to rotate it 180 degrees clock wise.</p>
+    <img src="../../images/Ace.png" id="myimage" onclick="rotateImage();" alt="" />
+    </div> -->
+
+
+<div class="rotate-group">
+    <!-- <img class="rotate-x" src="../../images/queen.png" width="120" height="120"> -->
+    <img class="rotate-x" src="../../images/queen.png">
+</div>
+
+
+<!-- unsuccessful attempt to get front and back of card to rotate in animation -->
+<!-- <div class="rotate-group-flip">
+    <div class="rotate-x">
+    
+        <div class="thefront">
+            <img class="rotate-x" src="../../images/ten.png">
+        </div>
+        <div class="theback">
+            <img class="rotate-x" src="../../images/Ace.png">
+        </div>
+    </div>
+</div> -->
+
+
+
+
+    <div>
+        <h2 style="width:200px;" id="status"></h2>
+    </div>
+    <div class="cog-container">
+        <img id="img1" src="../../images/cogRainbow.png" alt="cog1">
+    </div>
+    
+    <script>rotateAnimation("img1", 30);</script>
+
+
     <!-- <div id="app"></div> -->
+    
 
     <div class="straightflushcontainer">
         <div class="flipcontainer">
@@ -132,6 +124,7 @@
         </div>
     </div>
 
+    
     <!-- <div>  Pisa notes for the second card - If used
         The Leaning Tower of Pisa (Italian: Torre pendente di Pisa) or simply the Tower of Pisa (Torre di Pisa [ˈtorre di
         ˈpiːza, - ˈpiːsa]) is the campanile, or freestanding bell tower, of the cathedral of the Italian city of Pisa, known
@@ -140,71 +133,6 @@
         the Pisa Baptistry.
     </div> -->
     
-
-
-
-    <!-- <div class="deck-full-container">
-        <div class="deck-container">
-            <div class="the-deck-card">
-                <div class="thedeckfront"></div>
-                <div class="thedeckback">
-                    <img src="../../images/Ace.png">
-                </div>
-            </div>
-        </div>
-        <div class="deck-container">
-            <div class="the-deck-card">
-                <div class="thedeckfront"></div>
-                <div class="thedeckback">
-                    <img src="../../images/king.png">
-                </div>
-            </div>
-        </div>
-        <div class="deck-container">
-            <div class="the-deck-card">
-                <div class="thedeckfront"></div>
-                <div class="thedeckback">
-                    <img src="../../images/queen.png">
-                </div>
-            </div>
-        </div>
-        <div class="deck-container">
-            <div class="the-deck-card">
-                <div class="thedeckfront"></div>
-                <div class="thedeckback">
-                    <img src="../../images/jack.png">
-                </div>
-            </div>
-        </div>
-        <div class="deck-container">
-            <div class="the-deck-card" id="ten" onclick="myFunction()">
-                <div class="thedeckfront"  onclick="myFunction()"></div>
-                <div class="thedeckback">
-                    <img src="../../images/ten.png">
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
-
-
-
-
-
-
-    <!-- <canvas class="myCanvas" id="myCanvas" width="200" height="200"> -->
-
-    <div class="canvasDiv" id="canvasDiv">
-        <canvas class="myCanvas" id="myCanvas">
-            <p>Sorry your browswer does not support canvas.</p>
-        </canvas>
-    </div>
-
-    <script src="./src/index.js"></script>
-    <!-- <script src="./src/canvasClick.js"></script> -->
-    <script src="./src/removeBoxes.js"></script>
-
 
 
     <div class="deck-full-container">
@@ -250,6 +178,18 @@
         </div>
     </div>
 
+
+    <!-- <canvas class="myCanvas" id="myCanvas" width="200" height="200"> -->
+    
+    <div class="canvasDiv" id="canvasDiv">
+        <canvas class="myCanvas" id="myCanvas">
+            <p>Sorry your browswer does not support canvas.</p>
+        </canvas>
+    </div>
+
+    <script src="./src/index.js"></script>
+    <!-- <script src="./src/canvasClick.js"></script> -->
+    <script src="./src/removeBoxes.js"></script>
 
 </body>
 </html>

@@ -17,3 +17,76 @@ The overflow hidden keeps the scrollbars from appearing by default */
 } */
 
 
+
+.cog-container {
+    /* background: transparent; */
+    /* z-index: -1; */
+    width: 300px;
+    height: 300px;
+}
+
+.cog-container img {
+    /* background: transparent; */
+    /* z-index: -1; */
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+/* .perspective { perspective: 300px; } */
+
+.rotate-group { 
+    position: relative;
+    width: 250px;
+    height: 360px;
+    /* border: 2px solid black; */
+}
+
+.rotate-group img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.rotate-group:hover .rotate-x {
+    -webkit-animation: animate-x 5s infinite linear;
+    animation: animate-x 5s infinite linear;
+    /* transform: rotateY(180deg); */
+}
+
+.rotate-x {
+    perspective: 300px;
+    animation: animate-x 5s infinite linear;
+}
+
+@-webkit-keyframes animate-x {
+    0% { -webkit-transform: rotateX(0); }
+    100% { -webkit-transform: rotateX(360deg); }
+}
+
+@keyframes animate-x {
+    0% { transform: rotateX(0); }
+    100% { transform: rotateX(360deg); }
+}
+
+
+
+
+/* ----------------------------------------- */
+/* .rotate-x {
+    perspective: 300px;
+    animation: animate-x 5s infinite linear;
+}
+
+@-webkit-keyframes animate-x {
+    0% { -webkit-transform: rotateX(0); }
+    100% { -webkit-transform: rotateX(360deg); }
+}
+
+@keyframes animate-x {
+    0% { transform: rotateX(0); }
+    100% { transform: rotateX(360deg); }
+} */
+
