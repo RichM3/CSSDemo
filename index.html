@@ -8,37 +8,11 @@
     <link rel="stylesheet" href="./src/styles/flipcard.css">
     <link rel="stylesheet" href="./src/styles/canvas.css">
     <link rel="stylesheet" href="./src/styles/cube.css">
+    <link rel="stylesheet" href="./src/styles/cube2.css">
+    <!-- <link rel="stylesheet" href="./dist/main.css"> -->
     <title>Document</title>
 
-    <script>
-        var looper;
-        var degrees = 0;
-
-        function rotateAnimation(el, speed) {
-            var elem = document.getElementById(el);
-            elem.style.transform = "rotate(" + degrees + "deg)";
-
-            looper = setTimeout('rotateAnimation(\'' + el + '\',' + speed + ')', speed);
-            // looper = setInterval('rotateAnimation(\'' + el + '\',' + speed + ')', speed);
-
-            degrees++;
-
-            if (degrees > 359) {
-                degrees = 1;
-            }
-
-            document.getElementById("status").innerHTML = "rotate(" + degrees + "deg)";
-        }
-    </script>
-
-    <!-- <script>
-        function rotateImage() {
-            var img = document.getElementById('myimage');
-            img.style.transform = 'rotate(180deg)';
-        }
-    </script> -->
-
-<style type="text/css">
+    <style type="text/css">
     /* WebKit and Opera browsers */
     @-webkit-keyframes spinner {
         from {
@@ -64,9 +38,9 @@
             transform: rotateY(-360deg);
         }
     }
-</style>
+    </style>
 
-<style type="text/css">
+    <style type="text/css">
 
     #stage {
         margin: 1em auto;
@@ -110,17 +84,66 @@
         animation-delay: -1s;
     }
 
-</style>
+    </style>
 
 </head>
 <body>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- CONTROLS -->
+    <input type="radio" checked id="radio-front" name="select-face" />
+    <input type="radio" id="radio-left" name="select-face" />
+    <input type="radio" id="radio-right" name="select-face" />
+    <input type="radio" id="radio-top" name="select-face" />
+    <input type="radio" id="radio-bottom" name="select-face" />
+    <input type="radio" id="radio-back" name="select-face" />
+
+    <div></div><!-- separator -->
+
+    <div class="scene">
+        <div class="cube">
+            <div class="cube-face  cube-face-front"></div>
+            <div class="cube-face  cube-face-back"></div>
+            <div class="cube-face  cube-face-left"></div>
+            <div class="cube-face  cube-face-right"></div>
+            <div class="cube-face  cube-face-top"></div>
+            <div class="cube-face  cube-face-bottom"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- This is the top bar spinner  -->
     <div id="stage" style="background: rgba(0,0,0,0.5);">
         <p class="spinner" id="spinner" style="background: rgba(0,0,0,0.5); text-align: center; color: #fff;">Stop, I'm getting dizzy!</p>
     </div>
 
 
+    <!-- this is the card image spinner  -->
     <div id="stage" style="padding-left: 180px; height: 160px;">
         <div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
             <img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 160px;"
@@ -136,16 +159,13 @@
         </div>
     </div>
 
-
-
+    <!-- this is the corvette spinner  -->
     <div id="stage" style="background: rgba(0,0,0,0.5);">
         <img id="spinner" style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 122px;" src="../../images/cars/blueVette.png"
                 width="238" height="160" alt="blueVette">
-        <!-- <p class="spinner" id="spinner" style="background: rgba(0,0,0,0.5); text-align: center; color: #fff;">Stop, I'm
-            getting dizzy!</p> -->
     </div>
 
-
+    <!-- this is the car cube  -->
     <div id="stage" class="stage" style="width: 120px; height: 120px;">
         <div class="cubespinner">
             <div class="face1">
@@ -169,6 +189,8 @@
         </div>
     </div>
 
+
+    <!-- this is the number cube  -->
     <!-- <div id="stage" class="stage" style="width: 120px; height: 120px;">
         <div class="cubespinner">
             <div class="face1">1</div>
@@ -180,7 +202,9 @@
         </div>
     </div> -->
 
-    <!-- <div id="stage" style="width: 120px; height: 120px;">
+
+    <!-- these are the floating numbers  -->
+    <div id="stage" style="width: 120px; height: 120px;">
         <div id="spinner" class="spinner">
             <div class="face1">1</div>
             <div class="face2">2</div>
@@ -189,14 +213,14 @@
             <div class="face5">5</div>
             <div class="face6">6</div>
         </div>
-    </div> -->
+    </div>
 
 
 
-    <!-- <div class="cog-container">
+    <div class="cog-container">
     <p>Click on the image to rotate it 180 degrees clock wise.</p>
     <img src="../../images/Ace.png" id="myimage" onclick="rotateImage();" alt="" />
-    </div> -->
+    </div>
 
 
 <div class="rotate-group">
@@ -213,7 +237,6 @@
         <img id="img1" src="../../images/cogRainbow.png" alt="cogRainbow">
     </div>
     
-    <!-- <script>rotateAnimation("img1", 30);</script> -->
 
 
 

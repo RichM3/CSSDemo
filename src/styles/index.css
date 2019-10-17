@@ -1,3 +1,9 @@
+/* @import './backupCSSforDeck.css'; */
+/* @import './canvas.scss';
+@import './cube.css';
+@import './cube2.scss'; */
+/* @import './flipcard.scss'; */
+
 /* There is a default small margin if not explicitly set to zero
 The overflow hidden keeps the scrollbars from appearing by default */
 
@@ -15,6 +21,11 @@ The overflow hidden keeps the scrollbars from appearing by default */
 /* body {
     overflow: hidden;
 } */
+
+
+.largeSeperator {
+    height: 800px;
+}
 
 
 

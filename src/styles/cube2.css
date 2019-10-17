@@ -1,0 +1,72 @@
+
+
+/* $size: 150px; // cube length */
+/* body {
+  text-align: center;
+  padding: 50px;
+} */
+
+.scene {
+  display: inline-block;
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  
+  perspective: 600px;
+}
+.cube {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+.cube-face {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background: #8d8989;
+  opacity: 0.8;
+}
+/* // faces */
+.cube-face-front {
+  background: yellow;
+  transform: translate3d(0, 0, 75px);
+}  
+.cube-face-back {
+  background: black;
+  transform: rotateY(180deg) translate3d(0, 0, 75px);
+} 
+.cube-face-left {
+  background: green;
+  transform: rotateY(-90deg) translate3d(0, 0, 75px);
+} 
+.cube-face-right {
+  background: magenta;
+  transform: rotateY(90deg) translate3d(0, 0, 75px);
+} 
+.cube-face-top {
+  background: blue;
+  transform: rotateX(90deg) translate3d(0, 0, 75px);
+} 
+.cube-face-bottom {
+  background: rgba(255,0,0,1);
+  transform: rotateX(-90deg) translate3d(0, 0, 75px);
+}  
+/* // controls  */
+#radio-back:checked ~ .scene .cube {
+  transform: rotateY(180deg); 
+} 
+#radio-left:checked ~ .scene .cube {
+  transform: rotateY(90deg); 
+} 
+#radio-right:checked ~ .scene .cube {
+  transform: rotateY(-90deg); 
+}
+#radio-top:checked ~ .scene .cube {
+  transform: rotateX(-90deg); 
+}  
+#radio-bottom:checked ~ .scene .cube {
+  transform: rotateX(90deg); 
+}
