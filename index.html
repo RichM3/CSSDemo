@@ -42,13 +42,47 @@
 
     <style type="text/css">
 
-    #stage {
+    .banner-stage {
+        /* text-align: center; */
         margin: 1em auto;
         -webkit-perspective: 1200px;
+        perspective: 1200px;
+    }
+
+    .banner-spinner {
+        align-items: center;
+        height: 300px;
+
+        -webkit-animation-name: spinner;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 6s;
+
+        animation-name: spinner;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 6s;
+
+        /* animation-direction: normal */
+        animation-delay: -1s;
+
+
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    #stage {
+        /* text-align: center; */
+        margin: 1em auto;
+        -webkit-perspective: 1200px;
+        perspective: 1200px;
     }
     
     #spinner {
-        height: 200px;
+        align-items: center;
+        height: 300px;
 
         -webkit-animation-name: spinner;
         -webkit-animation-timing-function: linear;
@@ -76,6 +110,8 @@
     }
 
     #spinner img {
+        /* align-items: center; */
+        height: 300px;
         position: absolute;
         border: 1px solid #ccc;
         background: rgba(255,255,255,0.8);
@@ -90,61 +126,62 @@
 <body>
 
 
+    <div class="radio-cube-wrapper">
+        <!-- CONTROLS -->
+        <input type="radio" checked id="radio-front" name="select-face" />
+        <input type="radio" id="radio-left" name="select-face" />
+        <input type="radio" id="radio-right" name="select-face" />
+        <input type="radio" id="radio-top" name="select-face" />
+        <input type="radio" id="radio-bottom" name="select-face" />
+        <input type="radio" id="radio-back" name="select-face" />
 
+        <div class="spacer"> </div><!-- separator -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- CONTROLS -->
-    <input type="radio" checked id="radio-front" name="select-face" />
-    <input type="radio" id="radio-left" name="select-face" />
-    <input type="radio" id="radio-right" name="select-face" />
-    <input type="radio" id="radio-top" name="select-face" />
-    <input type="radio" id="radio-bottom" name="select-face" />
-    <input type="radio" id="radio-back" name="select-face" />
-
-    <div></div><!-- separator -->
-
-    <div class="scene">
-        <div class="cube">
-            <div class="cube-face  cube-face-front"></div>
-            <div class="cube-face  cube-face-back"></div>
-            <div class="cube-face  cube-face-left"></div>
-            <div class="cube-face  cube-face-right"></div>
-            <div class="cube-face  cube-face-top"></div>
-            <div class="cube-face  cube-face-bottom"></div>
+        <div class="scene">
+            <div class="cube">
+                <div class="cube-face  cube-face-front"></div>
+                <div class="cube-face  cube-face-back"></div>
+                <div class="cube-face  cube-face-left"></div>
+                <div class="cube-face  cube-face-right"></div>
+                <div class="cube-face  cube-face-top"></div>
+                <div class="cube-face  cube-face-bottom"></div>
+            </div>
         </div>
     </div>
 
 
+    <div class="spacer"> </div><!-- separator -->
+    <div class="spacer"> </div><!-- separator -->
 
 
-
-    <!-- This is the top bar spinner  -->
-    <div id="stage" style="background: rgba(0,0,0,0.5);">
-        <p class="spinner" id="spinner" style="background: rgba(0,0,0,0.5); text-align: center; color: #fff;">Stop, I'm getting dizzy!</p>
+    <!-- This is the banner spinner  -->
+    <div class="banner-stage" style="background: rgba(0,0,0,0.5);">
+        <p class="banner-spinner" style="background: rgba(0,0,0,0.5); text-align: center; color: #fff;">Stop, I'm getting dizzy!</p>
     </div>
 
 
+    <div class="spacer"> </div><!-- separator -->
+    <div class="spacer"> </div><!-- separator -->
+
+
     <!-- this is the card image spinner  -->
-    <div id="stage" style="padding-left: 180px; height: 160px;">
+    <div id="stage" style="padding-left: 580px; height: 360px;">
+        <div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
+            <img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 140px;"
+                src="../../images/Ace.png" width="200" height="160" alt="">
+            <img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 140px;"
+                src="../../images/king.png" width="213" height="160" alt="">
+            <img style="-webkit-transform: rotateY(-144deg) translateX(180px); padding: 0 0 0 140px;"
+                src="../../images/queen.png" width="240" height="160" alt="">
+            <img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 140px;"
+                src="../../images/jack.png" width="213" height="160" alt="">
+            <img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 140px;"
+                src="../../images/ten.png" width="238" height="160" alt="">
+        </div>
+    </div>
+
+    <!-- original features -->
+    <!-- <div id="stage" style="padding-left: 180px; height: 160px;">
         <div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
             <img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 160px;"
                 src="../../images/Ace.png" width="200" height="160" alt="">
@@ -157,7 +194,10 @@
             <img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 122px;"
                 src="../../images/ten.png" width="238" height="160" alt="">
         </div>
-    </div>
+    </div> -->
+
+    <div class="spacer"> </div><!-- separator -->
+
 
     <!-- this is the corvette spinner  -->
     <div id="stage" style="background: rgba(0,0,0,0.5);">
@@ -231,31 +271,12 @@
 
 
     <div class="cog-header">
-        <h2 style="width:200px; color:whitesmoke" id="spinner">MY COLORS CHANGES</h2>
+        <h2 style="width:200px; color:whitesmoke" id="spinner">MY COLORS CHANGE</h2>
     </div>
     <div class="cog-container-fast" >
         <img id="img1" src="../../images/cogRainbow.png" alt="cogRainbow">
     </div>
     
-
-
-
-<!-- unsuccessful attempt to get front and back of card to rotate in animation -->
-<!-- <div class="rotate-group-flip">
-    <div class="rotate-x">
-    
-        <div class="thefront">
-            <img class="rotate-x" src="../../images/ten.png">
-        </div>
-        <div class="theback">
-            <img class="rotate-x" src="../../images/Ace.png">
-        </div>
-    </div>
-</div> -->
-
-
-
-
 
 
     <!-- <div id="app"></div> -->
