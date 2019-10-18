@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,16 +14,13 @@
     <!-- <link rel="stylesheet" href="./dist/main.css"> -->
     <title>Document</title>
 </head>
-
 <body>
     <!-- <div class="top-header">
         CSS Demo
     </div> -->
 
     <div class="banner-stage">
-        <p class="banner-spinner">CSS Demo!
-            <!-- <br>(Hover to pause me) -->
-        </p>
+        <p class="banner-spinner">CSS Demo!</p>
     </div>
 
     <section class="toc-section-wrapper">
@@ -47,7 +43,7 @@
 
 
 
-    <div class="flip-card-header">
+    <div class="flip-card-header" >
         Hover over the cards below.
     </div>
 
@@ -109,38 +105,23 @@
 
     </div>
 
-    <div class="rotating-cube-header">
-        <p>Hover over a card to stop the carousel.</p>
-        <p>Or click the card and link to its meaning.</p>
-    </div>
 
-    <!-- this is the card image carousel  -->
+    <!-- this is the card image spinner  -->
     <div class="stage">
         <div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
-            <a href="https://thecardsoflife.com/ace-of-spades-person/">
-                <img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 140px;"
+            <img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 140px;"
                 src="../../images/Ace.png" width="200" height="160" alt="">
-            </a>
-            <a href="https://thecardsoflife.com/king-of-spades-person/">
-                <img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 140px;"
+            <img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 140px;"
                 src="../../images/king.png" width="213" height="160" alt="">
-            </a>
-            <a href="https://thecardsoflife.com/queen-of-spades-person/">
-                <img style="-webkit-transform: rotateY(-144deg) translateX(180px); padding: 0 0 0 140px;"
+            <img style="-webkit-transform: rotateY(-144deg) translateX(180px); padding: 0 0 0 140px;"
                 src="../../images/queen.png" width="240" height="160" alt="">
-            </a>
-            <a href="https://thecardsoflife.com/jack-of-spades-person/">
-                <img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 140px;"
+            <img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 140px;"
                 src="../../images/jack.png" width="213" height="160" alt="">
-            </a>
-            <a href="https://thecardsoflife.com/ten-of-spades-person/">
-                <img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 140px;"
+            <img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 140px;"
                 src="../../images/ten.png" width="238" height="160" alt="">
-            </a>
         </div>
     </div>
 
-    
 
 
 
@@ -245,11 +226,11 @@
     </div> -->
 
     <!-- <div class="stage"> -->
-    <div class="rotating-cube-header">
-        I hope you enjoyed the site!
-    </div>
+        <div class="rotating-cube-header">
+            I hope you enjoyed the site!
+        </div>
 
-    <!-- <div class="spacer"> </div>
+        <!-- <div class="spacer"> </div>
         <div class="spacer"> </div> -->
     <!-- </div> -->
 
@@ -318,20 +299,20 @@
 
 
     <!-- <img class="rotate-x" src="../../images/queen.png" width="120" height="120"> -->
-    <!-- <div class="rotate-group">
+<!-- <div class="rotate-group">
     <img class="rotate-x" src="../../images/queen.png">
 </div> -->
 
 
 
-
+    
 
 
     <!-- <div id="app"></div> -->
+    
 
 
-
-
+    
     <!-- <div>  Pisa notes for the second card - If used
         The Leaning Tower of Pisa (Italian: Torre pendente di Pisa) or simply the Tower of Pisa (Torre di Pisa [ˈtorre di
         ˈpiːza, - ˈpiːsa]) is the campanile, or freestanding bell tower, of the cathedral of the Italian city of Pisa, known
@@ -339,7 +320,7 @@
         Cathedral and is the third-oldest structure in the city's Cathedral Square (Piazza del Duomo), after the cathedral and
         the Pisa Baptistry.
     </div> -->
-
+    
 
 
 
@@ -353,17 +334,16 @@
     </div> -->
 
     <!-- <canvas class="myCanvas" id="myCanvas" width="200" height="200"> -->
-
+    
     <!-- <div class="canvasDiv" id="canvasDiv">
         <canvas class="myCanvas" id="myCanvas">
             <p>Sorry your browswer does not support canvas.</p>
         </canvas>
     </div> -->
 
-    <script src="./src/index.js"></script>
+    <!-- <script src="./src/index.js"></script> -->
     <!-- <script src="./src/canvasClick.js"></script> -->
-    <script src="./src/removeBoxes.js"></script>
+    <!-- <script src="./src/removeBoxes.js"></script> -->
 
 </body>
-
 </html>

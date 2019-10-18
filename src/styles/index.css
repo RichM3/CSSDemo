@@ -26,6 +26,50 @@ The overflow hidden keeps the scrollbars from appearing by default */
     margin-left: 40px;
 } */
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* pebble */
+/* Hex: 433E49 / 928490 / DBC1AD / F3E8EB */
+/* harvest */
+/* Hex: 8E7C68 / ED7458 / FFDC9F / DDC9BC */
+/* scuba */
+/* Hex: 0C4A60 / EF6C33 / ABDFF1 / E1DDDB */
+
+.top-header {
+    text-align: center;
+}
+
+.toc-section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    /* background-color: rgba(0,0,0,0.5); */
+    background-color: #433E49;
+    padding: 5px 0px 5px 0px;
+}
+
+.toc-section-wrapper a {
+    color: white;
+    text-decoration: underline;
+    /* padding: 500px; */
+}
+
+.toc-wrapper-list h2 {
+    padding: 30px;
+    font-size: 40px;
+}
+
+.cog-wrapper {
+    padding: 100px;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: green; */
+}
 
 .cog-header {
     width: 600px;
@@ -48,10 +92,24 @@ The overflow hidden keeps the scrollbars from appearing by default */
     width: 300px;
     height: 300px;
 
-    animation: 1s linear infinite rotateCog;
+    animation: 3s linear infinite rotateCog;
 }
 
 .cog-container img {
+    width: 300px;
+    height: 300px;
+}
+
+.cog-container-slow {
+    z-index: -1;
+    position: relative;
+    width: 300px;
+    height: 300px;
+
+    animation: 6s linear infinite rotateCog;
+}
+
+.cog-container-slow img {
     width: 300px;
     height: 300px;
 }
@@ -120,3 +178,4 @@ The overflow hidden keeps the scrollbars from appearing by default */
     70% { background: green;}
     100% { background: blue;}
 }
+

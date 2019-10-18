@@ -42,7 +42,23 @@
     }
   }
 
+
+.rotating-cube-header {
+    background-color: #0C4A60;
+    text-align: center;
+    color: white;
+    padding: 90px 200px 50px 0px;
+    font-size: 40px;
+
+    animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+    animation: 10s linear infinite changeColor;
+  }
+
+
   .cubespinner {
+    padding-top: 120px;
+
+
     -webkit-animation-name: spincube;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
@@ -65,11 +81,12 @@
   }
 
   .cubespinner div {
+    /* -webkit-backface-visibility: hidden; */
     position: absolute;
-    /* width: 120px; */
-    /* height: 120px; */
     width: 120px;
     height: 120px;
+    /* width: 300px;
+    height: 300px; */
     border: 1px solid #ccc;
     background: rgba(255,255,255,0.8);
     box-shadow: inset 0 0 20px rgba(0,0,0,0.2);

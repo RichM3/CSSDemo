@@ -7,14 +7,33 @@
   padding: 50px;
 } */
 
-.radio-cube-wrapper {
+.cube-label {
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  
-  border: 2px solid blue;
+  color: white;
+  padding: 50px 0px 50px 0px;
+  font-size: 30px;
+}
+
+
+
+.radio-cube-wrapper {
+  color: white;
+  padding: 80px 90px 30px 0px;
+  text-align: center;
+  height: 600px;
+
+  /* background-color: blue; */
+  background-color: rgba(0,0,0,0.5);
+  background-color: #433E49;
 }
 
 .spacer {
   height: 50px;
+}
+
+.spacer-small {
+  height: 30px;
 }
 
 .scene {
