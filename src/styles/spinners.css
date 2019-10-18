@@ -80,7 +80,9 @@
         /* text-align: center; */
         margin: auto;
         padding: 100px;
-        padding-left: 600px; 
+        padding-right: 20%;
+    display: flex;
+    justify-content: center;
         height: 360px;
         /* margin: 1em auto; */
         -webkit-perspective: 1200px;
