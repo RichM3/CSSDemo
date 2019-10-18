@@ -62,6 +62,16 @@ body {
     font-size: 40px;
 }
 
+.cog-spinner-header {
+    text-align: center;
+    text-shadow: 3px 3px 6px black;
+    color: white;
+    /* color: black; */
+    padding: 50px 0px 0px 0px;
+    font-size: 40px;
+    /* font-weight: bold; */
+}
+
 .cog-wrapper {
     padding: 100px;
     position: relative;

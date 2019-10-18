@@ -43,16 +43,19 @@ Day 1:
 - Develop the Readme.md
 
 Day 2: 
-- Recolor a card or toggle visibility
-- A semantic button is used within a card component
+- Research tutorials on CSS
+- Find and download images used in program
 
 Day 3:
-- Weaving One Element Over and Under Another Element
-- Flipping a card in CSS
- 
+- Develop hover flip effect
+- Program the onclick effect
+- Program spinning animations
+
 Day 4:
-- Rotate card
-- Mouseover - Effects
+- Program background color changing animations
+- Code 3d cube that reacts to buttons
+- Code floating 3d cube
+
 
 Bonus Features
 - Resizing images based on cooresponding text sizes

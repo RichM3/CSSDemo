@@ -47,7 +47,7 @@
     background-color: #0C4A60;
     text-align: center;
     color: white;
-    padding: 90px 200px 50px 0px;
+    padding: 90px 100px 50px 0px;
     font-size: 40px;
 
     animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
