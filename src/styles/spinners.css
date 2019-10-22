@@ -39,6 +39,18 @@
 /* pebble */
 /* Hex: 433E49 / 928490 / DBC1AD / F3E8EB */
 
+    .banner-nospin {
+        padding-top: 80px;
+        align-items: center;
+        height: 300px;
+
+        background-color: rgb(76, 0, 255);
+        background-color: #0C4A60;
+        text-align: center; 
+        color: #fff;
+    }
+
+
     .banner-spinner {
         padding-top: 80px;
         align-items: center;
