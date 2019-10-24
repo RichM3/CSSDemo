@@ -39,8 +39,8 @@ body {
 
 .mylinks {
     color: white;
-    /* text-decoration: underline; */
-    font-size: 40px;
+    text-decoration: underline;
+    font-size: 20px;
     text-align: center;
     text-shadow: 3px 3px 6px black;
     background-color: #0C4A60;

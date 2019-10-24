@@ -13,10 +13,11 @@ CSS Demos will provide the user with examples of:
 2) Hover over effects
 3) Spinning animations
 4) Rotating images as links - Photo Array
-5) Moving a cube animation on click
-6) Flipping a card in CSS - Onclick Effects
-7) Floating animations
-8) Typewriter Effects
+5) Background color changing animations
+6) Moving a cube animation on click
+7) Flipping a card in CSS - Onclick Effects
+8) Floating animations
+Bonus) Typewriter Effects
 
  
 ### Wireframes
@@ -55,8 +56,6 @@ Day 4:
 - Code 3d cube that reacts to buttons
 - Code floating 3d cube
 
-
 Bonus Features
-- Resizing images based on cooresponding text sizes
 - Typewriter Effects
 - Various Text Effects
