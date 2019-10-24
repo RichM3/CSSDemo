@@ -9,15 +9,14 @@ This project would allow me to enhance my current skillset and share my new foun
 
 CSS Demos will provide the user with examples of:
 
-1) Recolor a card or toggle visibility
-2) A semantic button is used within a card component
-3) Weaving One Element Over and Under Another Element
-4) Flipping a card in CSS
-5) Rotate card
-6) Mouseover - Effects
-7) Resizing images based on cooresponding text sizes
+1) Rotating animations on both x and y axis
+2) Hover over effects
+3) Spinning animations
+4) Rotating images as links - Photo Array
+5) Moving a cube animation on click
+6) Flipping a card in CSS - Onclick Effects
+7) Floating animations
 8) Typewriter Effects
-9) Text Effects
 
  
 ### Wireframes

@@ -37,6 +37,18 @@ body {
 /* scuba */
 /* Hex: 0C4A60 / EF6C33 / ABDFF1 / E1DDDB */
 
+.mylinks {
+    color: white;
+    /* text-decoration: underline; */
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 3px 3px 6px black;
+    background-color: #0C4A60;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 400px 5px 400px;
+}
+
 .top-header {
     text-align: center;
 }
