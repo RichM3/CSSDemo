@@ -31,7 +31,7 @@ Bonus) Typewriter Effects
 
 - Vanilla JavaScript for overall structure
 - DOM Manipulation
-- Canvas
+- JavaScript
 - Webpack to bundle and serve up the various scripts
 
 
