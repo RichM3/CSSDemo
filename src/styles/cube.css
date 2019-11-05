@@ -53,7 +53,7 @@
     font-size: 40px;
 
     animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
-    animation: 10s linear infinite changeColor;
+    animation: 8s linear infinite changeColor;
   }
 
 

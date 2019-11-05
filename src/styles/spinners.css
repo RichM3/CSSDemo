@@ -101,7 +101,7 @@
         perspective: 1200px;
 
         animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
-        animation: 10s linear infinite changeColor;
+        animation: 8s linear infinite changeColor;
     }
 
     #stage {
@@ -111,7 +111,7 @@
         perspective: 1200px;
 
         animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
-        animation: 10s linear infinite changeColor;
+        animation: 8s linear infinite changeColor;
     }
     
     #spinner {
@@ -163,5 +163,5 @@
         -webkit-perspective: 1200px;
         perspective: 1200px;
         animation-timing-function: ease-out;
-        animation: 10s linear infinite changeColor;
+        animation: 8s linear infinite changeColor;
     } */
